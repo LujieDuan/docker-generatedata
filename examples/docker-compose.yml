@@ -1,7 +1,8 @@
 version: '3'
 services:
   generatedata:
-    image: mvisonneau/generatedata:latest
+    build: ../
+    image: lujieduan/generatedata:latest
     environment:
       GD_DB_HOSTNAME: mysql
       GD_DB_NAME: generatedata
